@@ -1,0 +1,97 @@
+.header{
+    width: 100%;
+    height: 525px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("../../assets/photo_1.jpg");
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 200px 60px;
+    margin-top: 100px;
+    animation: fadeIn 0.9s;
+}
+
+.header h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.header p{
+    font-size: 24px;
+    color: #f7f7f7;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header-btn{
+    margin-top: 40px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-btn button{
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.header-btn div{
+    position: relative;
+    color: #fff;
+}
+
+.header div .home-btn{
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    padding-left: 100px;
+}
+
+
+.header div:hover .home-btn{
+    opacity: 1;
+    padding-left: 0px;
+}
+
+@media (max-width: 480px){
+   .header{
+    width: 100%;
+    height: 320px;
+    background-image: url("../../assets/photo_1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 130px 0px;
+   }
+
+   .header h1{
+    font-size: 14px;
+    background-color: #fff;
+    color: #000;
+   }
+   .header-btn button{
+    display: none;
+   }
+   .header p{
+    font-size: 12px;
+    background-color: tomato;
+    color: #fff;
+   }
+}

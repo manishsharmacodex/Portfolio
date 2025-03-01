@@ -1,0 +1,104 @@
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px 100px;
+    z-index: 999;
+}
+
+.navbar .logo{
+    font-size: 30px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.navbar .logo::after{
+    content: '';
+    width: 60%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.navbar .navbar-menu{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.navbar .navbar-menu li{
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #c2c2c2;
+    padding-bottom: 10px;
+}
+
+.navbar .navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.navbar-right button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: tomato;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+.navbar-right button:nth-child(2){
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar .active{
+    border-bottom: 2px solid tomato;
+}
+
+.nav-sticky{
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+
+
+.nav-sticky .navbar-menu li{
+    color: #333;
+}
+
+.nav-sticky .navbar-right button:nth-child(2){
+    background-color: blue;
+    color: #fff;
+    transition: 0.5s;
+}
+
+@media (max-width: 480px){
+    .navbar .logo{
+        font-size: 17px;
+    }
+
+    .navbar .navbar-menu{
+        display: none;
+    }
+
+    .navbar-right button{
+        display: none;
+    }
+}
