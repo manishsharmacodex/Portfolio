@@ -18,5 +18,16 @@
 @media (max-width: 480px){
     .aboutus{
         padding: 20px 20px;
+        place-items: center;
+    }
+
+    table{
+        border: 0px solid #ccc;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table tr, td, th{
+        border: 1px solid #ccc;
     }
 }
