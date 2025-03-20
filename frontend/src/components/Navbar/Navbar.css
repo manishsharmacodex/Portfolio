@@ -92,7 +92,7 @@
 @media (max-width: 480px){
     .navbar{
         padding: 0px 30px;
-        border-bottom: 1px solid #cccccc5b;
+        /* border-bottom: 1px solid #cccccc5b; */
     }
 
     .navbar .logo{
